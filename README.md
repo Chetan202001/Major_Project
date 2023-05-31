@@ -1,40 +1,36 @@
 # Major_Project
 Final Year Project
+PCSE23-57
+
+
+The title of our Project is "SENTIMENT ANALYSIS BY AUDIO SPEECH USING TEXTBLOB", the team members are:
+ANAND GUPTA
+CHETAN SHUKLA
+PALLAVI VERMA
+VIBHANSHU VERMA
+
+![alt text]([http://url/to/img.png](https://stackabuse.s3.amazonaws.com/media/sentiment-analysis-in-python-with-textblob-1.jpg))
  
  
  
- Overview
-This project aims to perform sentiment analysis on audio data using the TextBlob library. Sentiment analysis is the process of determining the sentiment or emotional tone behind a piece of text. In this case, we convert audio data into text and then analyze the sentiment of that text using the TextBlob library.
+I. Introduction
+Sentiment analysis is the process of determining the sentiment or emotional tone of a piece of text. It is widely used in various applications, including customer feedback analysis, social media monitoring, and market research. Traditionally, sentiment analysis has been performed on written text. However, with the advancements in speech recognition technology, it is now possible to perform sentiment analysis on audio speech as well. In this tutorial, we will explore how to perform sentiment analysis on audio speech using TextBlob, a popular Python library for natural language processing.
 
-Dependencies
-To run this project, you'll need the following dependencies:
+II. Speech-to-Text Conversion
+Before we can perform sentiment analysis on audio speech, we need to convert the speech into text. This process is known as speech-to-text conversion or speech recognition. There are several speech recognition libraries available in Python, such as SpeechRecognition and Google Cloud Speech-to-Text. These libraries utilize machine learning algorithms to transcribe spoken words into written text.
 
-Python (3.6 or higher)
-TextBlob (0.15.3 or higher)
-SpeechRecognition (3.8.1 or higher)
-PyAudio (0.2.11 or higher)
-You can install the required dependencies using pip by running the following command:
+III. TextBlob for Sentiment Analysis
+TextBlob is a powerful Python library that provides a simple and intuitive API for natural language processing tasks, including sentiment analysis. It offers pre-trained models and methods to analyze text and extract sentiment polarity and subjectivity. Sentiment polarity indicates whether the sentiment expressed in the text is positive, negative, or neutral, while subjectivity measures the extent to which the text is subjective or objective.
 
-pip install textblob SpeechRecognition PyAudio
+IV. Integration of Speech Recognition and TextBlob
+To perform sentiment analysis on audio speech, we can integrate the speech recognition library with TextBlob. The basic steps involved in this integration are as follows:
 
+1. Convert the audio speech into text using a speech recognition library like SpeechRecognition or Google Cloud Speech-to-Text.
+2. Pass the transcribed text to TextBlob for sentiment analysis.
+3. Use TextBlob's sentiment analysis methods to calculate the sentiment polarity and subjectivity of the transcribed text.
+4. Interpret the sentiment analysis results to gain insights into the emotional tone of the audio speech.
 
-Please note that PyAudio may require additional system-level dependencies to be installed. You can refer to the PyAudio documentation for more information on installation instructions specific to your operating system.
+V. Conclusion
+Performing sentiment analysis on audio speech can provide valuable insights in various applications, including customer feedback analysis, call center monitoring, and voice assistants. By combining speech recognition and TextBlob's sentiment analysis capabilities, we can extract meaningful sentiment information from audio speech data. With further advancements in speech recognition and natural language processing technologies, sentiment analysis by audio speech is expected to become even more accurate and efficient in the future.
 
-Usage
-Clone the repository to your local machine or download the source code files.
-Make sure you have installed all the required dependencies mentioned above.
-Place the audio file you want to analyze in the project directory.
-Update the audio_file variable in the sentiment_analysis.py script with the path to your audio file.
-Run the sentiment_analysis.py script using the following command:
-
-python sentiment_analysis.py
-
-
-The script will convert the audio file into text using the SpeechRecognition library and then perform sentiment analysis on that text using TextBlob.
-The sentiment analysis results will be displayed on the console, showing the polarity (positive, negative, or neutral) and subjectivity (objective or subjective) of the text.
-Limitations
-The accuracy of the sentiment analysis depends on the accuracy of the speech-to-text conversion. Errors in the conversion may affect the sentiment analysis results.
-This project uses the default sentiment analysis model provided by TextBlob, which may not be suitable for all types of text data. You may need to fine-tune or train a custom sentiment analysis model depending on your specific requirements.
-The performance of the sentiment analysis may vary depending on the audio quality and the clarity of speech in the audio file.
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the project's repository.
+Remember to import the necessary libraries, handle audio recording or input, and follow the specific documentation of the speech recognition library you choose to integrate with TextBlob for accurate results.
